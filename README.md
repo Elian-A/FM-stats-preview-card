@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://your-solution-url.com)
-- Live Site URL: [Github pages](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/Elian-A/FM-stats-preview-card)
+- Live Site URL: [Github pages](https://elian-a.github.io/FM-stats-preview-card/)
 
 ## My process
 
@@ -42,6 +42,8 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
+
+Failed again with utility classes. Everything goes well until the media query 😆
 
 _Falta completar_
 
