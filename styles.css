@@ -1,0 +1,121 @@
+:root {
+  --clr-primary-900: hsl(233, 47%, 7%); /* main background */
+  --clr-primary-800: hsl(244, 38%, 16%); /* card background */
+  --clr-secondary-400: hsl(277, 64%, 61%); /* accent */
+
+  --clr-neutral-100: hsl(0, 0%, 100%); /* Main heading, stats */
+  --clr-neutral-200: hsla(0, 0%, 100%, 0.75); /* Main paragraph */
+  --clr-neutral-400: hsla(0, 0%, 100%, 0.6); /* heading stats */
+
+  --fs-body: 0.937rem;
+  --fs-title: 1.7rem;
+  --fs-label: 0.875rem;
+
+  --ff-base: "Inter", sans-serif;
+  --ff-accent: "Lexend Deca", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*******************/
+/* UTILITY CLASSES */
+/*******************/
+.clr-secondary-400 {
+  color: var(--clr-secondary-400);
+}
+
+.clr-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.clr-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+
+.fs-title {
+  font-size: var(--fs-title);
+}
+
+.fs-label {
+  font-size: var(--fs-label);
+}
+
+.line-height-title {
+  line-height: 1.1;
+}
+
+.line-height-paragraph {
+  line-height: 1.8;
+}
+
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-spacing-label {
+  letter-spacing: 1px;
+}
+
+/**********/
+/* STYLES */
+/**********/
+body {
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-base);
+  font-size: var(--fs-body);
+}
+
+main {
+  padding-inline: 1.5rem;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.stats-preview {
+  background-color: var(--clr-primary-800);
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+.stats-preview__image {
+  height: 240px;
+  background-size: cover;
+  background-image: url("images/image-header-mobile.jpg");
+  background-color: var(--clr-secondary-400);
+  background-blend-mode: overlay;
+}
+
+.stats-preview__content {
+  padding: 2.5rem 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.text-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.stats {
+  display: grid;
+  gap: 1.5rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
