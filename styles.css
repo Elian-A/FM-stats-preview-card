@@ -87,6 +87,8 @@ main {
 }
 
 .stats-preview {
+  display: grid;
+  max-width: 900px;
   background-color: var(--clr-primary-800);
   border-radius: 0.5rem;
   overflow: auto;
@@ -95,6 +97,7 @@ main {
   height: 240px;
   background-size: cover;
   background-image: url("images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
   background-color: var(--clr-secondary-400);
   background-blend-mode: overlay;
 }
@@ -114,8 +117,49 @@ main {
   display: grid;
   gap: 1.5rem;
 }
+
 .stat {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .stats-preview {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+  }
+
+  .stats-preview__image {
+    background-image: url("images/image-header-desktop.jpg");
+    height: 100%;
+  }
+
+  .stats-preview__content {
+    padding: 3rem 4rem 3rem 3.5rem;
+    gap: 3rem;
+  }
+  .text-wrapper {
+    text-align: left;
+    direction: ltr;
+  }
+  .text-wrapper > p {
+    font-size: small;
+  }
+
+  .stats {
+    grid-auto-flow: column;
+    direction: ltr;
+  }
+
+  .stat {
+    text-align: left;
+  }
+
+  .stat > :nth-child(1) {
+    font-size: 1.3rem;
+  }
+  .stat > :nth-child(2) {
+    font-size: 0.6rem;
+  }
 }
